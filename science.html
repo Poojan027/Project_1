@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music | DF Youtube</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background: bisque;
+        }
+
+        button {
+            margin: 20px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            font-weight: bold;
+            border-radius: 2vw;
+            transition: 0.5s ease;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+    </style>
 </head>
+
 <body>
     <a href="index.html"><button>&larr; Go back</button></a>
     <br><br>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zKXMaLP_T6I?si=tYV6Hv7IPKlcWQGq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container">
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pXzD871cyEw?si=6l0sjeArbKCUJYa9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="box">
+            <iframe src="https://www.youtube.com/embed/zKXMaLP_T6I?si=tYV6Hv7IPKlcWQGq" allowfullscreen></iframe>
+        </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/M--6_0F62pQ?si=buOm_qoqiy8dhyvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="box">
+            <iframe src="https://www.youtube.com/embed/pXzD871cyEw?si=6l0sjeArbKCUJYa9" allowfullscreen></iframe>
+        </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qJZ1Ez28C-A?si=epduNRHYuoWjnw1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="box">
+            <iframe src="https://www.youtube.com/embed/M--6_0F62pQ?si=buOm_qoqiy8dhyvS" allowfullscreen></iframe>
+        </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lczVMeA4gAQ?si=o7OCQUkYdeuLiXcL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="box">
+            <iframe src="https://www.youtube.com/embed/qJZ1Ez28C-A?si=epduNRHYuoWjnw1y" allowfullscreen></iframe>
+        </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/IUj5Holfwu4?si=0Dtg-aBxFRVmYfGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
+        <div class="box">
+            <iframe src="https://www.youtube.com/embed/lczVMeA4gAQ?si=o7OCQUkYdeuLiXcL" allowfullscreen></iframe>
+        </div>
+
+        <div class="box">
+            <iframe src="https://www.youtube.com/embed/IUj5Holfwu4?si=0Dtg-aBxFRVmYfGE" allowfullscreen></iframe>
+        </div>
+
+    </div>
 </body>
+
 </html>

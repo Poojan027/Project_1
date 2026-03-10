@@ -5,48 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DF Youtube</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            background-color: bisque;
+        }
+        h1 {
+            text-align: center;
+            color: red;
+            margin-top: 4vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3vw;
+            padding: 5vh;
+        }
+
+        .box{
+            width: 22vw;
+            height: 22vh;
+            border-radius: 1vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition:transform 0.3s ease;
+        }
+        .box:hover{
+            transform: scale(1.1);
+        }
+
+        .box a{
+            text-decoration: none;
+            background-color: white;
+            padding: 1vh 2vw;
+            border-radius: 2vw;
+            font-weight: bold;
+            color: black;
+
+            transition: background-color 0.5s ease;
+        }
+        .box a:hover{
+            background-color: red;
+        }
+        .music{
+            background-image: url("https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg");
+        }
+        .gaming{
+            background-image: url("https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg");
+        }
+        .coding{
+            background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg");
+        }
+        .science{
+            background-image: url("https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg");
+        }
+    </style>
 </head>
 
 <body>
     <h1>Distraction Free Youtube</h1>
 
-    <span>
-        <img width="70"
-            src="https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg?_gl=1*1ozd5wg*_ga*MTczNzkzODk0Ny4xNzQ0MzUyODM3*_ga_8JE65Q40S6*czE3Njc3NjAxMzckbzMkZzEkdDE3Njc3NjA5MTkkajU5JGwwJGgw"
-            alt="Music image">
-        <span>
+    <div class="container">
+        <div class="box music">
             <a href="music.html">Music</a>
-        </span>
-    </span>
-    <br><br>
+        </div>
 
-    <span>
-        <img width="70"
-            src="https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?_gl=1*wjtuh8*_ga*MTczNzkzODk0Ny4xNzQ0MzUyODM3*_ga_8JE65Q40S6*czE3Njc3NjAxMzckbzMkZzEkdDE3Njc3NjEyNDgkajI4JGwwJGgw"
-            alt="Gaming image">
-        <span>
+        <div class="box gaming">
             <a href="gaming.html">Gaming</a>
-        </span>
-    </span>
-    <br><br>
+        </div>
 
-    <span>
-        <img width="70"
-            src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?_gl=1*wlx9mz*_ga*MTczNzkzODk0Ny4xNzQ0MzUyODM3*_ga_8JE65Q40S6*czE3Njc3NjAxMzckbzMkZzEkdDE3Njc3NjEzODYkajU5JGwwJGgw"
-            alt="Coding image">
-        <span>
+        <div class="box coding">
             <a href="coding.html">Coding</a>
-        </span>
-    </span>
-    <br><br>
+        </div>
 
-    <span>
-        <img width="70"
-            src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?_gl=1*no97b9*_ga*MTczNzkzODk0Ny4xNzQ0MzUyODM3*_ga_8JE65Q40S6*czE3Njc3NjAxMzckbzMkZzEkdDE3Njc3NjE0OTckajIwJGwwJGgw">
-        <span>
+        <div class="box science">
             <a href="science.html">Science</a>
-        </span>
-    </span>
+        </div>
+    </div>
 
 </body>
 
